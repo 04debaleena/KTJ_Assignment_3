@@ -1,0 +1,226 @@
+/* App.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(96, 171, 236), rgb(27, 63, 182));
+}
+
+.app {
+  width: 100%;
+}
+
+.container {
+  max-width: 350px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+h4 {
+  margin: 10px 0;
+  color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.list li {
+  background-color: #e8e3e3;
+  color: #242121;
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 5px solid #2ecc71;
+}
+
+.form-control {
+  margin: 10px 0;
+}
+
+.form-control input[type='text'],
+.form-control input[type='number'], 
+.form-control input[type='date'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.form-control input[type='text']:hover,
+.form-control input[type='number']:hover, 
+.form-control input[type='date']:hover{
+  transform: scale(1.05);
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #42a1f5;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+  border: 2px solid #42a1f5;
+}
+.btn:hover{
+  border: 2px solid black;
+}
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  z-index: 1001; 
+  border-radius: 5px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.popup p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.popup button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #5341df;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add some base styles for the form and button
+.form-control {
+  margin: 10px 0;
+}
+
+.form-control input[type='text'],
+.form-control input[type='number'],
+.form-control input[type='date'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #9b59b6;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+} */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+
+} */
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.content > div {
+  /* flex: 1; */
+  min-width: 300px;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+#expense-add{
+  background-color: rgba(247, 180, 72, 0.7);
+  padding: 3%;
+  border-radius: 2%;
+  margin-right: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#balance{
+  text-align: center;
+  color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:max-content;
+  padding-right: 5%;
+}
+@media (max-width: 768px) {
+  #balance{
+    color: rgb(237, 234, 227);
+  }
+}
+
+
